@@ -6,3 +6,5 @@ product1.printDetails()
 
 for i in range(1, 13):
     product1.generateStockStatement(i)
+
+print('Net Profit:', product1.getNetProfit(), 'CAD')

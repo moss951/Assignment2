@@ -9,6 +9,9 @@ class Product:
         self._stockLevel = stockLevel
         self._monthlyUnitsManufactured = monthlyUnitsManufactured
 
+        self._totalUnitsSold = 0
+        self._totalUnitsManufactured = 0
+
     def printDetails(self):
         print('\nProduct Code:', self._code)
         print('Product Name: ' + self._name, '\n')
@@ -30,3 +33,9 @@ class Product:
         print('|    Manufactured:', self._monthlyUnitsManufactured, 'units')
         print('|    Sold:', monthlyUnitsSold)
         print('|    Stock:', self._stockLevel)
+
+        self._totalUnitsManufactured += self._monthlyUnitsManufactured
+        self._totalUnitsSold += monthlyUnitsSold
+
+    def getNetProfit(self):
+        return self._totalUnitsSold * self._price - self._totalUnitsManufactured * self._manufactureCost

@@ -1,5 +1,3 @@
-import random
-
 class Product:
     def __init__(self, code, name):
         self._code = code

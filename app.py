@@ -1,7 +1,3 @@
-productCode = int(input('Enter product code: '))
-productName = input('Enter product name: ')
-productPrice = float(input ('Enter product sale price: '))
-productManufactureCost = float(input('Enter product manufacture cost: '))
-stockLevel = int(input('Enter stock level: '))
-monthlyUnitsManufactured = int(input('Enter monthy units manufactured: '))
+import product
 
+product1 = product.Product(int(input('Enter product code: ')), input('Enter product name: '), float(input ('Enter product sale price: ')), float(input('Enter product manufacture cost: ')), int(input('Enter stock level: ')), int(input('Enter monthy units manufactured: ')))

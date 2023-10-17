@@ -34,4 +34,4 @@ class StockStatement:
         self._totalUnitsSold += monthlyUnitsSold
 
     def getNetProfit(self):
-        return self._totalUnitsSold * self._price - self._totalUnitsManufactured * self._manufactureCost
+        return format(self._totalUnitsSold * self._price - self._totalUnitsManufactured * self._manufactureCost, '.2f')
